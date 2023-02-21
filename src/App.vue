@@ -6,7 +6,7 @@
   <router-view />
 </template>
 <script>
-let b = 1;
+let c = 1;
 </script>
 <style lang="scss">
 #app {
