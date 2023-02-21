@@ -1,19 +1,26 @@
 module.exports = {
   root: true,
   env: {
-    node: true,
     browser: true,
+    node: true,
+    es6: true,
+  },
+  parser: 'vue-eslint-parser',
+  parserOptions: {
+    parser: '@typescript-eslint/parser',
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    jsxPragma: 'React',
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   extends: [
-    'plugin:vue/vue3-essential',
-    'eslint:recommended',
-    '@vue/typescript/recommended',
+    'plugin:vue/vue3-recommended',
+    'plugin:@typescript-eslint/recommended',
     'prettier',
     'plugin:prettier/recommended',
   ],
-  parserOptions: {
-    ecmaVersion: 2020,
-  },
   rules: {
     // @typescript-eslint
     '@typescript-eslint/explicit-function-return-type': 'off', // 需要函数和类方法的显式返回类型
