@@ -5,9 +5,6 @@
   </nav>
   <router-view />
 </template>
-<script>
-let c = 1;
-</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
