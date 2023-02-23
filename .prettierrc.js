@@ -1,41 +1,20 @@
 module.exports = {
-    // 一行最多 120 字符
-    printWidth: 120,
-    // 使用 2 个空格缩进
-    tabWidth: 2,
-    // 不使用缩进符，而使用空格
-    useTabs: false,
-    // 行尾需要有分号
-    semi: true,
-    // 使用单引号
-    singleQuote: true,
-    // 对象的 key 仅在必要时用引号
-    quoteProps: 'as-needed',
-    // jsx 不使用单引号，而使用双引号
-    jsxSingleQuote: false,
-    // 末尾需要有逗号
-    trailingComma: 'all',
-    // 大括号内的首尾需要空格
-    bracketSpacing: true,
-    // jsx 标签的反尖括号需要换行
-    jsxBracketSameLine: false,
-    // 箭头函数，只有一个参数的时候，也需要括号
-    arrowParens: 'always',
-    // 每个文件格式化的范围是文件的全部内容
-    rangeStart: 0,
-    rangeEnd: null,
-    // 不需要写文件开头的 @prettier
-    requirePragma: false,
-    // 不需要自动在文件开头插入 @prettier
-    insertPragma: false,
-    // 使用默认的折行标准
-    proseWrap: 'preserve',
-    // 根据显示样式决定 html 要不要折行
-    htmlWhitespaceSensitivity: 'css',
-    // vue 文件中的 script 和 style 内不用缩进
-    vueIndentScriptAndStyle: false,
-    // 换行符使用 lf
-    endOfLine: 'lf',
-    // 格式化内嵌代码
-    embeddedLanguageFormatting: 'auto',
-};
+  printWidth: 120, // 最大行长规则通常设置为 100 或 120。
+  tabWidth: 2, // 指定每个标签缩进级别的空格数。
+  useTabs: false, // 使用制表符而不是空格缩进行。
+  semi: false, // true（默认）: 在每条语句的末尾添加一个分号。false：仅在可能导致 ASI 失败的行的开头添加分号。
+  vueIndentScriptAndStyle: true, // Vue 文件脚本和样式标签缩进
+  singleQuote: true, // 使用单引号而不是双引号
+  quoteProps: 'as-needed', // 引用对象中的属性时，仅在需要时在对象属性周围添加引号。
+  bracketSpacing: true, // 在对象文字中的括号之间打印空格。
+  trailingComma: 'all', // "none":没有尾随逗号。"es5": 在 ES5 中有效的尾随逗号（对象、数组等），TypeScript 中的类型参数中没有尾随逗号。"all"- 尽可能使用尾随逗号。
+  bracketSameLine: false, // 将>多行 HTML（HTML、JSX、Vue、Angular）元素放在最后一行的末尾，而不是单独放在下一行（不适用于自闭合元素）。
+  jsxSingleQuote: false, // 在 JSX 中使用单引号而不是双引号。
+  arrowParens: 'always', // 在唯一的箭头函数参数周围始终包含括号。
+  insertPragma: false, // 插入编译指示
+  requirePragma: false, // 需要编译指示
+  proseWrap: 'never', // 如果散文超过打印宽度，则换行
+  htmlWhitespaceSensitivity: 'strict', // 所有标签周围的空格（或缺少空格）被认为是重要的。
+  endOfLine: 'lf', // 确保在文本文件中仅使用 ( \n)换行，常见于 Linux 和 macOS 以及 git repos 内部。
+  rangeStart: 0, // 格式化文件时，回到包含所选语句的第一行的开头。
+}

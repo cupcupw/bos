@@ -59,4 +59,4 @@ module.exports = {
     'space-before-function-paren': 'off', // 强制在 function的左括号之前使用一致的空格
     'vue/no-v-html': 'off',
   },
-};
+}
